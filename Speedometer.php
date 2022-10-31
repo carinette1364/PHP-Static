@@ -7,16 +7,14 @@ class Speedometer {
     
     public static function convertKmToMiles(int $distance) : string
     {
-        $conversion = number_format($distance * self::KMMILES_CONVERSION, 2, ' , ', '  ');
-        return $conversion;
+        return number_format($distance * self::KMMILES_CONVERSION, 2, ' , ', '  ');
       
     }
 
     public static function convertMilesToKm(int $distance) : string
     {
-        $conversion = number_format($distance / self::KMMILES_CONVERSION, 2, ' , ', ' ');
-        return $conversion;
-        
+        return number_format($distance / self::KMMILES_CONVERSION, 2, ' , ', ' ');
+
     }
 }
 
